@@ -1,0 +1,8 @@
+pyTelegramBotAPI
+requests
+beautifulsoup4
+psutil
+pyautogui
+pillow
+speedtest-cli
+rich

@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# LiteMind Private Data
+config.json
+litemind_memory.sqlite
+screenshot.png
+
+# System
+.DS_Store
+Thumbs.db
