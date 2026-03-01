@@ -10,6 +10,7 @@ LiteMind is an elite, autonomous AI assistant integrated with Telegram, designed
 - **📂 File Toolkit**: Search, list, and read files in your project directory autonomously.
 - **🤖 Android Automation**: Full ADB support to control your mobile device, open apps, and perform clicks.
 - **🌐 Research Engine**: Advanced web scraping and internet search capabilities.
+- **🧠 Multi-Model Support**: Support for Gemini, OpenAI, Grok, Hugging Face, OpenRouter, Ollama, and vLLM.
 
 ## 🛠️ Installation
 

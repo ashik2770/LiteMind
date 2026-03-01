@@ -51,7 +51,8 @@ def run_setup():
             "Grok", 
             "Hugging Face (Inference API)", 
             "OpenRouter (Anthropic/Others)", 
-            "Ollama (Local/API)"
+            "Ollama (Local/API)",
+            "vLLM (Self-hosted/Fast)"
         ],
         style=questionary.Style([
             ('pointer', 'fg:cyan bold'),
@@ -90,6 +91,11 @@ def run_setup():
         config['base_url'] = questionary.text("Enter Ollama Endpoint:", default="http://localhost:11434/v1/chat/completions").ask()
         config['model'] = questionary.text("Enter Local Model Name (e.g., llama3):", default="llama3").ask()
         config['api_key'] = "ollama"
+
+    elif provider == "vLLM (Self-hosted/Fast)":
+        config['base_url'] = questionary.text("Enter vLLM Endpoint:", default="http://localhost:8000/v1/chat/completions").ask()
+        config['model'] = questionary.text("Enter vLLM Model Name (e.g., facebook/opt-125m):").ask()
+        config['api_key'] = "vllm"
 
     else: # Grok
         config['base_url'] = "https://api.x.ai/v1/chat/completions"
